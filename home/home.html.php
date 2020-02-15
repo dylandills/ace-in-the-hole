@@ -24,11 +24,7 @@
       <section>
         <h1>Slider Image Gallery Here</h1>
       </section>
-      <div class="button" align="center">
-        <a class="register-button" href="" rel="nofollow">
-          <span>Register Here</span>
-        </a>
-      </div>
+      <?php include 'includes/button.inc.html.php'; ?>
     </main>
     <?php include 'includes/footer.inc.html.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

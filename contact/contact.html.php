@@ -13,9 +13,10 @@
     <?php include '../includes/header.inc.html.php'; ?>
     <?php include '../includes/nav.inc.html.php'; ?>
     <main>
-      <h1>Questions? We'd love to hear from you!</h1>
+      <h1>Contact</h1>
+      <br />
+      <h2>Questions? We'd love to hear from you!</h2>
       <form method="post" action=" " id="inquiryForm">
-        <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
         <label for="myName">Name:</label>
           <input type="text" name="myName" id="myName">
         <label for="myEmail">E-mail:</label>
@@ -23,6 +24,7 @@
         <label for="myQuestion">Question:</label>
           <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion"></textarea>
         <input id="mySubmit" type="submit" value="Submit">
+      </form>
     </main>
     <?php include '../includes/footer.inc.html.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -19,11 +19,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum lorem ante, vel dignissim massa eleifend vitae. In sagittis placerat sem, consequat consectetur turpis consequat sit amet. Sed sollicitudin posuere augue in suscipit.</p>
       <h1>Annual Ace in the Hole Multisport Weekend</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam mattis, pharetra purus vitae, facilisis ante. Maecenas nulla ex, lacinia at erat a, semper finibus eros. Fusce consectetur consectetur purus a ultricies. Sed sollicitudin sagittis augue in rutrum. Ut sit amet sagittis arcu. Integer ipsum metus, tempor non tellus quis, ornare placerat odio. Maecenas nec dolor eu augue euismod viverra.</p>
-      <div class="button" align="center">
-        <a class="register-button" href="" rel="nofollow">
-          <span>Register Here</span>
-        </a>
-      </div>
+      <?php include 'includes/button.inc.html.php'; ?>
     </main>
     <?php include '../includes/footer.inc.html.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
