@@ -1,14 +1,39 @@
+/*Imports*/
+@import 'mixins.less';
+@import 'palette.less';
+
+
 /*MOBILE STYLESHEET*/
 
 body {
   font-family: 'Roboto', sans-serif !important;
   /*Headings*/
   h1 {
-    padding-top: 0.938em;
+      .headingStyle(@color1; 1.6em);
+  }
+
+  h2 {
+      .headingStyle(@color1; 1.4em);
+  }
+
+  h3 {
+      .headingStyle(@color1; 1.1em);
+  }
+
+  h4 {
+      .headingStyle(@color1;.9em);
+  }
+
+  h5 {
+      .headingStyle(@color1;.85em);
+  }
+
+  h6 {
+      .headingStyle(@color1;.75em);
   }
   /*Global Styles*/
   i {
-    color: #FF0000;
+    color: @color3;
   }
   /*Header*/
   .header {
@@ -16,13 +41,13 @@ body {
     .logo {
       text-align: center;
       height: 3.125em;
-      border: 1px solid #FF0000;
+      border: 1px solid @color3;
     }
   }
   .menuIcon {
     display: flex;
     justify-content: center;
-    background: #000;
+    background: @color1;
   }
   /*Nav*/
   nav {
@@ -30,7 +55,7 @@ body {
     overflow: hidden;
     float: none;
     text-align: center;
-    background: #000;
+    background: @color1;
     width: 100%;
     transition: max-height 0.5s;
     &.menuOpen {
@@ -40,13 +65,13 @@ body {
     ul {
       li {
         display: block;
-        border-top:1px solid #FFFFFF;
+        border-top:1px solid @color2;
         padding: 0.625em;
         &:hover {
-          background: #999;
+          background: @color3;
         }
         a {
-          color: #FFFFFF;
+          color: @color2;
           padding: 0.625em;
           width: 100%;
           text-decoration: none;
@@ -61,8 +86,8 @@ body {
       padding: 0.313em;
     }
     section {
-      border: 1px solid #FF0000;
-      height: 100vh;
+      border: 1px solid @color3;
+      heigh: 100vh;
       padding: 5px;
       margin: 1em 1em;
     }
@@ -71,9 +96,9 @@ body {
       margin: 4em 0 !important;
       .register-button {
         border-radius: 4px;
-        background-image: linear-gradient(to right, #FF0000 , #000000);
+        background-image: linear-gradient(to right, @color3 , @color1);
         border: none;
-        color: #FFFFFF;
+        color: @color2;
         text-align: center;
         text-transform: uppercase;
         font-size: 1.375em;
@@ -104,26 +129,41 @@ body {
         }
       }
     }
+    /*Form Stylings*/
     form {
-      color: #000;
-      padding: 10px;
-      padding-top: 35px;
-      width: 100%;
+      color: @color1;
+      text-transform: uppercase;
+      font-size: 1.375em;
+      display: flex;
+      flex-direction: column;
       label {
-        clear: left;
-        float: left;
+        align-self: flex-start;
         font-size: .75em;
-        padding-right: 10px;
-        text-align: right;
+        margin: .5em 0;
       }
       input, textarea {
-        border: 2px solid #000;
+        border: 2px solid @color1;
+        &:last-child {
+          margin: .5em 0 !important;
+          align-self: center;
+          border-radius: 4px;
+          background-image: linear-gradient(to right, @color3 , @color1);
+          border: none;
+          color: @color2;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 1em;
+          padding: .25em;
+          width: 50%;
+          transition: all 0.4s;
+          cursor: pointer;
+        }
       }
     }
   }
   /*Footer*/
   footer {
-    background: #000;
+    background: @color1;
     width: 100%;
     height: 4.688em;
     text-align: center;
@@ -131,10 +171,10 @@ body {
       li {
         display: inline-block;
         margin: 1em;
+        a>i:hover {
+          color: @color2;
+        }
       }
-    }
-    p {
-      color: #000000;
     }
   }
 }
@@ -155,14 +195,14 @@ body {
   }
   .menuIcon {
     display: none;
-    background: #000;
+    background: @color1;
     width: 100%;
     text-align: center;
     a {
       width: 100%;
       display: inline-block;
       i {
-        color: #FFFFFF;
+        color: @color2;
         vertical-align: middle;
       }
     }

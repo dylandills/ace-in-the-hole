@@ -16,7 +16,7 @@
       <h1>Registration</h1>
       <section>
         <h2>What To Bring</h2>
-        <p>Etiam venenatis facilisis dolor nec dapibus. Nam condimentum felis augue, nec euismod justo convallis sed. Sed in lorem feugiat, pulvinar purus vel, mollis odio. Sed eget facilisis nisi. Vivamus venenatis ex urna. Integer eget quam vestibulum, lacinia metus vel, ultrices tellus. Quisque fringilla condimentum est, nec posuere massa tincidunt porta. Fusce tempor cursus lacus at congue. Phasellus vel lectus ultricies, hendrerit mauris id, pretium magna. Fusce suscipit commodo malesuada. Suspendisse quis metus sed enim feugiat sagittis. Praesent faucibus felis id vehicula aliquet. Nulla dictum facilisis dapibus. Ut congue, orci vel auctor gravida, velit elit blandit risus, non luctus est quam id orci. Vivamus vel velit a nunc convallis elementum.</p>
+        <p>Etiam venenatis facilisis dolor nec dapibus. Nam condimentum felis augue, nec euismod justo convallis sed. Sed in lorem feugiat, pulvinar purus vel, mollis odio. Sed eget facilisis nisi. Vivamus venenatis ex urna. Integer eget quam vestibulum, lacinia metus vel, ultrices tellus.</p>
       </section>
       <section>
         <h2>Prices</h2>
@@ -24,12 +24,12 @@
       </section>
       <section>
         <h2>Packet Pickup</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam mattis, pharetra purus vitae, facilisis ante. Maecenas nulla ex, lacinia at erat a, semper finibus eros. Fusce consectetur consectetur purus a ultricies. Sed sollicitudin sagittis augue in rutrum. Ut sit amet sagittis arcu. Integer ipsum metus, tempor non tellus quis, ornare placerat odio. Maecenas nec dolor eu augue euismod viverra.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam mattis, pharetra purus vitae, facilisis ante. Maecenas nulla ex, lacinia at erat a, semper finibus eros. </p>
       </section>
       <section>
-        <h2>Registration Form</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum lorem ante, vel dignissim massa eleifend vitae. In sagittis placerat sem, consequat consectetur turpis consequat sit amet. Sed sollicitudin posuere augue in suscipit.</p>
+        <h2>Registration Form Goes Here</h2>
       </section>
+      <h2>Questions? We'd love to hear from you!</h2>
       <div class="button" align="center">
         <a class="register-button" href="" rel="nofollow">
           <span>Contact Us</span>

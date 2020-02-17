@@ -14,8 +14,6 @@
     <?php include '../includes/nav.inc.html.php'; ?>
     <main>
       <h1>Contact</h1>
-      <br />
-      <h2>Questions? We'd love to hear from you!</h2>
       <form method="post" action=" " id="inquiryForm">
         <label for="myName">Name:</label>
           <input type="text" name="myName" id="myName">
