@@ -13,8 +13,10 @@
     <?php include 'includes/header.inc.html.php'; ?>
     <?php include 'includes/nav.inc.html.php'; ?>
     <main>
-      <h1>Ace In The Hole</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum lorem ante, vel dignissim massa eleifend vitae. In sagittis placerat sem, consequat consectetur turpis consequat sit amet. Sed sollicitudin posuere augue in suscipit.</p>
+      <section>
+        <h1>Ace In The Hole</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum lorem ante, vel dignissim massa eleifend vitae. In sagittis placerat sem, consequat consectetur turpis consequat sit amet. Sed sollicitudin posuere augue in suscipit.</p>
+      </section>
       <section>
         <h1>Weather Feed Here</h1>
       </section>

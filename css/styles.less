@@ -87,8 +87,8 @@ body {
     }
     section {
       border: 1px solid @color3;
-      heigh: 100vh;
-      padding: 5px;
+      height: 100vh;
+      padding: 20px;
       margin: 1em 1em;
     }
     /*Button*/
@@ -179,32 +179,70 @@ body {
   }
 }
 
-@media only screen and (min-width: 767px) {
-  .menu {
-    ul {
-      padding:0;
-      margin:0;
-      li {
-        display: inline-block;
-        float: left;
-        list-style: none;
-        padding: 0 0 0 0.313em;
-        margin: 0;
+/*TABLET STYLESHEET
+The following CSS affects all screen sizes larger than 480 pixels wide.
+*/
+
+@media only screen and (min-width: 425px) {
+  body {
+    /*Header*/
+    .header {
+      .logo {
+        height: 4.5em;
+      }
+    }
+    /*Main*/
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: "header header"
+      "main side"
+      "footer footer";
+      grid-gap: 10px;
+      section {
+        &:first-child {
+          grid-area: header;
+        }
+        &:nth-child(4) {
+          grid-area: footer;
+        }
+      }
+      .button {
+        grid-column-start: 1;
+        grid-column-end: -1;
       }
     }
   }
-  .menuIcon {
-    display: none;
-    background: @color1;
-    width: 100%;
-    text-align: center;
-    a {
-      width: 100%;
-      display: inline-block;
-      i {
-        color: @color2;
-        vertical-align: middle;
-      }
-    }
-  }
+
 }
+
+// @media only screen and (min-width: 768px) {
+//   .menu {
+//     ul {
+//       padding:0;
+//       margin:0;
+//       li {
+//         display: inline-block;
+//         float: left;
+//         list-style: none;
+//         padding: 0 0 0 0.313em;
+//         margin: 0;
+//       }
+//     }
+//   }
+//   .menuIcon {
+//     display: none;
+//     background: @color1;
+//     width: 100%;
+//     text-align: center;
+//     a {
+//       width: 100%;
+//       display: inline-block;
+//       i {
+//         color: @color3;
+//         vertical-align: middle;
+//       }
+//     }
+//   }
+// }
