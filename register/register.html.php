@@ -13,8 +13,8 @@
     <?php include '../includes/header.inc.html.php'; ?>
     <?php include '../includes/nav.inc.html.php'; ?>
     <main>
-      <h1>Registration</h1>
       <section>
+        <h1>Registration</h1>
         <h2>What To Bring</h2>
         <p>Etiam venenatis facilisis dolor nec dapibus. Nam condimentum felis augue, nec euismod justo convallis sed. Sed in lorem feugiat, pulvinar purus vel, mollis odio. Sed eget facilisis nisi. Vivamus venenatis ex urna. Integer eget quam vestibulum, lacinia metus vel, ultrices tellus.</p>
       </section>
@@ -29,8 +29,9 @@
       <section>
         <h2>Registration Form Goes Here</h2>
       </section>
-      <h2>Questions? We'd love to hear from you!</h2>
       <div class="button" align="center">
+        <h2>Questions? We'd love to hear from you!</h2>
+        <br />
         <a class="register-button" href="" rel="nofollow">
           <span>Contact Us</span>
         </a>

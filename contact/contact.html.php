@@ -13,16 +13,19 @@
     <?php include '../includes/header.inc.html.php'; ?>
     <?php include '../includes/nav.inc.html.php'; ?>
     <main>
-      <h1>Contact</h1>
-      <form method="post" action=" " id="inquiryForm">
-        <label for="myName">Name:</label>
+      <section>
+        <h1>Contact</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum lorem ante, vel dignissim massa eleifend vitae. In sagittis placerat sem, consequat consectetur turpis consequat sit amet. Sed sollicitudin posuere augue in suscipit.</p>
+        <form method="post" action=" " id="inquiryForm">
+          <label for="myName">Name:</label>
           <input type="text" name="myName" id="myName">
-        <label for="myEmail">E-mail:</label>
+          <label for="myEmail">E-mail:</label>
           <input type="text" name="myEmail" id="myEmail">
-        <label for="myQuestion">Question:</label>
+          <label for="myQuestion">Question:</label>
           <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion"></textarea>
-        <input id="mySubmit" type="submit" value="Submit">
-      </form>
+          <input id="mySubmit" type="submit" value="Submit">
+        </form>
+      </section>
     </main>
     <?php include '../includes/footer.inc.html.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

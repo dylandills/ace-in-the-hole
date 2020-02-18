@@ -10,6 +10,7 @@ body {
   /*Headings*/
   h1 {
       .headingStyle(@color1; 1.6em);
+      text-decoration: underline;
   }
 
   h2 {
@@ -89,7 +90,7 @@ body {
       border: 1px solid @color3;
       height: 100vh;
       padding: 20px;
-      margin: 1em 1em;
+      margin: 1em 0;
     }
     /*Button*/
     .button {
@@ -183,7 +184,7 @@ body {
 The following CSS affects all screen sizes larger than 480 pixels wide.
 */
 
-@media only screen and (min-width: 425px) {
+@media only screen and (max-width: 780px) {
   body {
     /*Header*/
     .header {
@@ -208,41 +209,87 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
           grid-area: footer;
         }
       }
+      /*Button Styling*/
       .button {
         grid-column-start: 1;
         grid-column-end: -1;
       }
     }
+    /*Form Stylings*/
+    form {
+      width: 75%;
+      margin: auto;
+    }
   }
 
 }
 
-// @media only screen and (min-width: 768px) {
-//   .menu {
-//     ul {
-//       padding:0;
-//       margin:0;
-//       li {
-//         display: inline-block;
-//         float: left;
-//         list-style: none;
-//         padding: 0 0 0 0.313em;
-//         margin: 0;
-//       }
-//     }
-//   }
-//   .menuIcon {
-//     display: none;
-//     background: @color1;
-//     width: 100%;
-//     text-align: center;
-//     a {
-//       width: 100%;
-//       display: inline-block;
-//       i {
-//         color: @color3;
-//         vertical-align: middle;
-//       }
-//     }
-//   }
-// }
+/*TABLET STYLESHEET
+The following CSS affects all screen sizes larger than 780 pixels wide.
+*/
+
+@media screen and (max-width: 1024px) {
+  /*Header*/
+  .header {
+    .logo {
+      height: 5em !important;
+    }
+  }
+  /*Nav*/
+  nav {
+    max-height: 20vh !important;
+    background: @color1;
+    width: 100%;
+    ul {
+      padding:0;
+      margin:0;
+      li {
+        display: inline-block;
+        float: left;
+        list-style: none;
+        padding: 0 0 0 5px;
+        margin: 0;
+        a {
+          width: 100%;
+          display: inline-block;
+          color: #fff;
+          img {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  .menuIcon {
+    display: none !important;
+  }
+  /*Main*/
+  /*Main*/
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "header header"
+    "main side"
+    "footer footer";
+    grid-gap: 10px;
+    section {
+      &:first-child {
+        grid-area: header;
+      }
+      &:nth-child(4) {
+        grid-area: footer;
+      }
+    }
+    /*Button Styling*/
+    .button {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
+  /*Form Stylings*/
+  form {
+    width: 50% !important;
+    margin: auto;
+  }
+}
