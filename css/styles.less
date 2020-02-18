@@ -184,7 +184,7 @@ body {
 The following CSS affects all screen sizes larger than 480 pixels wide.
 */
 
-@media only screen and (max-width: 780px) {
+@media only screen and (min-width: 480px) {
   body {
     /*Header*/
     .header {
@@ -215,7 +215,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
         grid-column-end: -1;
       }
     }
-    /*Form Stylings*/
+    /*Form Styling*/
     form {
       width: 75%;
       margin: auto;
@@ -224,15 +224,15 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 
 }
 
-/*TABLET STYLESHEET
+/*DESKTOP STYLESHEET
 The following CSS affects all screen sizes larger than 780 pixels wide.
 */
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 780px) {
   /*Header*/
   .header {
     .logo {
-      height: 5em !important;
+      height: 7em !important;
     }
   }
   /*Nav*/
@@ -264,7 +264,6 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
     display: none !important;
   }
   /*Main*/
-  /*Main*/
   main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -287,9 +286,9 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
       grid-column-end: -1;
     }
   }
-  /*Form Stylings*/
+  /*Form Styling*/
   form {
-    width: 50% !important;
-    margin: auto;
+    width: 50vw !important;
+    margin: auto !important;
   }
 }
