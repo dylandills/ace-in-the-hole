@@ -12,3 +12,41 @@
     margin-top: @paramSize / 2;
     margin-bottom: @paramSize /2;
 }
+
+/*End of Parametric mixins*/
+
+/*General Mixins*/
+
+.button-style() {
+  margin: .5em 0 !important;
+  align-self: center;
+  border-radius: 4px;
+  background-image: linear-gradient(to right, @color3 , @color1);
+  border: none;
+  color: @color2;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: .5em;
+  width: 50%;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+/*Transitions*/
+
+.transitions() {
+  transition: max-height 0.5s;
+}
+
+/*Centered Text*/
+
+.center-text() {
+  text-align: center;
+}
+
+/*Full Width*/
+
+.full-width() {
+  width: 100%;
+}
