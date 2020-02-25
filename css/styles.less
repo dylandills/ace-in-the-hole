@@ -130,8 +130,35 @@ body {
         text-transform: uppercase;
         margin: .5em 0;
       }
-      input[type=text], input[type=number], input [type=tel] {
+      input[type=text], input[type=number] {
         height: 3em;
+      }
+      .athlete-wrapper {
+        display: table;
+        width: 100%;
+        label {
+          display: table-cell;
+          width: 1px;
+          white-space: nowrap;
+        }
+        span {
+          display: table-cell;
+          padding: 0 0 0 5px;
+          margin: 5px;
+          input {
+            width: 100%;
+          }
+        }
+      }
+      .gender-wrapper {
+        display: grid;
+        justify-content: space-evenly;
+        margin-top: 10px;
+      }
+      .event-wrapper {
+        display: grid;
+        grid-template-columns: 85% 15%;
+        margin-bottom: 20px;
       }
       input, textarea {
         border: 2px solid @color1;

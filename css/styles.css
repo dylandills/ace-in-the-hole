@@ -172,9 +172,35 @@ body main form label {
   margin: .5em 0;
 }
 body main form input[type=text],
-body main form input[type=number],
-body main form input [type=tel] {
+body main form input[type=number] {
   height: 3em;
+}
+body main form .athlete-wrapper {
+  display: table;
+  width: 100%;
+}
+body main form .athlete-wrapper label {
+  display: table-cell;
+  width: 1px;
+  white-space: nowrap;
+}
+body main form .athlete-wrapper span {
+  display: table-cell;
+  padding: 0 0 0 5px;
+  margin: 5px;
+}
+body main form .athlete-wrapper span input {
+  width: 100%;
+}
+body main form .gender-wrapper {
+  display: grid;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+body main form .event-wrapper {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  margin-bottom: 20px;
 }
 body main form input,
 body main form textarea {
