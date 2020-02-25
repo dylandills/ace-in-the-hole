@@ -21,8 +21,14 @@
           <input type="text" name="myName" id="myName">
           <label for="myEmail">E-mail:</label>
           <input type="text" name="myEmail" id="myEmail">
-          <label for="myQuestion">Question:</label>
+          <label for="myQuestion">Question/Comment:</label>
           <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion"></textarea>
+          <!--Athelete or Volunteer-->
+          <p>Are you an Athlete or a Volunteer?</p>
+          <label for="Athlete">Athlete</label>
+          <input type="checkbox" id="myAthlete" name="athlete" value="Athlete">
+          <label for="Volunteer">Volunteer</label>
+          <input type="checkbox" id="myVolunteer" name="volunteer" value="Volunteer">
           <input id="mySubmit" type="submit" value="Submit">
         </form>
       </section>
