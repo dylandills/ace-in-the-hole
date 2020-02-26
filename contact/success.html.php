@@ -15,12 +15,7 @@
     <main>
         <h2>Thank you!</h2>
         <section>
-          <p>Our records show you submitted the following:<br>
-            Name: <?php echo htmlspecialchars($myName, ENT_QUOTES, 'UTF-8'); ?><br>
-            Email: <?php echo htmlspecialchars($myEmail, ENT_QUOTES, 'UTF-8'); ?><br>
-            Question: <?php echo htmlspecialchars($myQuestion, ENT_QUOTES, 'UTF-8'); ?><br>
-            Athlete or Volunteer: <?php echo htmlspecialchars($role, ENT_QUOTES, 'UTF-8'); ?>
-          </p>
+          <span class="success">Thank you for Your inquiry! We will get back to you shortly.</span>
         </section>
     </main>
     <?php include '../includes/footer.inc.html.php'; ?>

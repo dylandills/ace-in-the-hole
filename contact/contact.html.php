@@ -17,12 +17,16 @@
         <h1>Contact</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum lorem ante, vel dignissim massa eleifend vitae. In sagittis placerat sem, consequat consectetur turpis consequat sit amet. Sed sollicitudin posuere augue in suscipit.</p>
         <form method="post" action=" " id="inquiryForm">
-          <label for="myName">Name:</label>
-          <input type="text" name="myName" id="myName">
-          <label for="myEmail">E-mail:</label>
-          <input type="text" name="myEmail" id="myEmail">
-          <label for="myQuestion">Question/Comment:</label>
-          <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion"></textarea>
+          <p><span class="error">* required field</span></p>
+          <!--Name -->
+          <label for="myName">*Name:</label>
+          <input type="text" name="myName" id="myName" required>
+          <!--Email -->
+          <label for="myEmail">*E-mail:</label>
+          <input type="text" name="myEmail" id="myEmail" required>
+          <!--Question/Comment -->
+          <label for="myQuestion">*Question/Comment:</label>
+          <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion" required></textarea>
           <!--Athelete or Volunteer-->
           <div class="athlete-wrapper">
              <label for="Athlete">Athlete</label>
@@ -30,6 +34,7 @@
              <label for="Volunteer">Volunteer</label>
              <span><input type="radio" name="radio" value="Volunteer"></span>
            </div>
+          <!--Submit -->
            <input type="submit" name="submit" value="submit">
         </form>
       </section>
