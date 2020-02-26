@@ -90,8 +90,9 @@
           <label for="myAccomendate">Any Special Accommodations?</label>
           <textarea form="registerForm" rows="10" cols="50" name="myAccomendate" id="myAccomendate"></textarea>
           <!--Submit Button-->
-          <input id="mySubmit" type="submit" value="Submit" required>
+          <input id="submit" name="submit" type="submit" value="Submit">
         </form>
+        <span id="sucessMessage"></span>
       </section>
       <div class="button" align="center">
         <h2>Questions? We'd love to hear from you!</h2>
