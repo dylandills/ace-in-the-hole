@@ -1,16 +1,18 @@
 <?php
-<?php
   $msg = '';
 //Don't run this unless we're handling a form submission
   if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
       /*Since the form has been submitted, let's capture the submission values so we can display them to the user on the success page*/
+      $role = $_POST['radio'];
       $myName = $_POST['myName'];
       $myAge = $_POST['myAge'];
       $myEmail = $_POST['myEmail'];
       $myEName = $_POST['myEName'];
       $myENumber = $_POST['myENumber'];
+      $event = implode(' | ', $_POST['checkEvent']);
       $myAccomendate = $_POST['myAccomendate'];
       date_default_timezone_set('Etc/UTC');
+
 
       require '../PHPMailer/PHPMailerAutoload.php';
 
@@ -42,11 +44,13 @@
       $mail->isHTML(true);
       //Build a simple message body
       $mail->Body = <<<EOT
+        Role: $role <br />
         Name: $myName<br />
         Age: $myAge<br />
         Email: $myEmail<br />
         Emergency Contact: $myEName<br />
         Emergency Contact Phone Number: $myENumber<br />
+        Event(s) Registering For: $event <br />
         Any Accomendations?: $myAccomendate<br />
         EOT;
 

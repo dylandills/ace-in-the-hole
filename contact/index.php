@@ -42,7 +42,7 @@
         Email: $myEmail<br>
         Name: $myName<br>
         Message: $myQuestion<br />
-        Role: $role <br
+        Role: $role <br />
         EOT;
 
       //Send the message, check for errors
