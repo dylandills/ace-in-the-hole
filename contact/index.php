@@ -1,11 +1,12 @@
 <?php
   $msg = '';
 //Don't run this unless we're handling a form submission
-  if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
+  if (isset($_POST['submit']) AND empty($_POST['honeypot'])) {
       /*Since the form has been submitted, let's capture the submission values so we can display them to the user on the success page*/
       $myName = $_POST['myName'];
       $myEmail = $_POST['myEmail'];
       $myQuestion = $_POST['myQuestion'];
+      $role = $_POST['radio'];
       date_default_timezone_set('Etc/UTC');
 
       require '../PHPMailer/PHPMailerAutoload.php';
@@ -40,7 +41,8 @@
       $mail->Body = <<<EOT
         Email: $myEmail<br>
         Name: $myName<br>
-        Message: $myQuestion
+        Message: $myQuestion<br />
+        Role: $role <br />
         EOT;
 
       //Send the message, check for errors
@@ -49,9 +51,9 @@
           //but you shouldn't display errors to users - process the error, log it on your server.
           echo "Mailer error: " . $mail->ErrorInfo;
       } else {
-          include 'success.html.php';
+        include 'success.html.php';
       }
       } else {
-          include 'contact.html.php';
+        include 'contact.html.php';
       }
 ?>

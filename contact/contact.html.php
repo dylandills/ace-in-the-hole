@@ -24,12 +24,13 @@
           <label for="myQuestion">Question/Comment:</label>
           <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion"></textarea>
           <!--Athelete or Volunteer-->
-          <p>Are you an Athlete or a Volunteer?</p>
-          <label for="Athlete">Athlete</label>
-          <input type="checkbox" id="myAthlete" name="athlete" value="Athlete">
-          <label for="Volunteer">Volunteer</label>
-          <input type="checkbox" id="myVolunteer" name="volunteer" value="Volunteer">
-          <input id="mySubmit" type="submit" value="Submit">
+          <div class="athlete-wrapper">
+             <label for="Athlete">Athlete</label>
+             <span><input type="radio" name="radio" value="Athlete"></span>
+             <label for="Volunteer">Volunteer</label>
+             <span><input type="radio" name="radio" value="Volunteer"></span>
+           </div>
+           <input type="submit" name="submit" value="submit">
         </form>
       </section>
     </main>

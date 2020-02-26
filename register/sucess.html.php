@@ -92,6 +92,7 @@
           <!--Submit Button-->
           <input id="mySubmit" type="submit" value="Submit" required>
         </form>
+        <span class="sucess">Thank You! Your Form Has Been Submitted</span>
       </section>
       <div class="button" align="center">
         <h2>Questions? We'd love to hear from you!</h2>

@@ -19,6 +19,7 @@
             Name: <?php echo htmlspecialchars($myName, ENT_QUOTES, 'UTF-8'); ?><br>
             Email: <?php echo htmlspecialchars($myEmail, ENT_QUOTES, 'UTF-8'); ?><br>
             Question: <?php echo htmlspecialchars($myQuestion, ENT_QUOTES, 'UTF-8'); ?><br>
+            Athlete or Volunteer: <?php echo htmlspecialchars($role, ENT_QUOTES, 'UTF-8'); ?>
           </p>
         </section>
     </main>
