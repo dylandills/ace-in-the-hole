@@ -132,6 +132,10 @@ body {
       }
       input[type=text], input[type=number] {
         height: 3em;
+        width: 100%;
+      }
+      #honeypot {
+        display: none;
       }
       .athlete-wrapper {
         display: table;
@@ -147,18 +151,31 @@ body {
           margin: 5px;
           input {
             width: 100%;
+            height: 1.5em;
           }
         }
       }
       .gender-wrapper {
         display: grid;
-        justify-content: space-evenly;
+        grid-template-columns: 95% 5%;
+        text-align: left;
         margin-top: 10px;
+        input {
+          height: 1.5em;
+        }
       }
       .event-wrapper {
         display: grid;
         grid-template-columns: 85% 15%;
+        grid-column-gap: 10px;
         margin-bottom: 20px;
+        input[type=checkbox] {
+          width: 20px;
+          height: 20px;
+          &:after {
+            background-color: @color3 !important;
+          }
+        }
       }
       input, textarea {
         border: 2px solid @color1;
@@ -276,6 +293,10 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
   form {
     width: 45% !important;
     margin: auto !important;
+    .event-wrapper {
+      grid-column: 95% 5% !important;
+      text-align: left;
+    }
     input {
       width: 50%;
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -30,6 +30,9 @@
         <h2>Register</h2>
         <!--Registration Form -->
         <form method="post" action=" " id="registerForm">
+          <p><span class="error">* required field</span></p>
+          <!---Honeypot --->
+          <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
           <!--Athelete or Volunteer-->
           <p>Will you be coming as an Athlete or a Volunteer?</p>
           <div class="athlete-wrapper">
@@ -39,11 +42,11 @@
              <span><input type="radio" name="radio" value="Volunteer"></span>
            </div>
           <h2>Your Info</h2>
-          <label for="myName">Name:</label>
+          <label for="myRName">*Name:</label>
           <input type="text" name="myName" id="myName" required>
-          <label for="myAge">Age:</label>
+          <label for="myAge">*Age:</label>
           <input type="number" name="myAge" id="myAge" required>
-          <label for="myEmail">E-mail:</label>
+          <label for="myREmail">*E-mail:</label>
           <input type="text" name="myEmail" id="myEmail" required>
           <!--Gender Checkboxes-->
           <div class="gender-wrapper">
@@ -56,35 +59,35 @@
           </div>
           <!--Emergency Contact Info-->
           <h2>Emergency Contact Info</h2>
-          <label for="myEName">Emergency Contact Name:</label>
+          <label for="myEName">*Emergency Contact Name:</label>
           <input type="text" name="myEName" id="myEName" required>
-          <label for="myENumber">Emergency Contact Phone Number:</label>
+          <label for="myENumber">*Emergency Contact Phone Number:</label>
           <input type="number" id="myENumber" name="myENumber" required>
           <!--Event Registering For-->
           <h2>Event Registering For</h2>
           <div class="event-wrapper">
             <label for="myLongSwim">Long Course SWIM - 1.2mi</label>
-            <input type="checkbox" name="checkEvent[]" value="A" >
+            <input type="checkbox" name="checkEvent[]" value="Long Course SWIM" >
             <label for="myLongBike">Long Course BIKE - 58 Miles</label>
-            <input type="checkbox" name="checkEvent[]" value="B" >
+            <input type="checkbox" name="checkEvent[]" value="Long Course BIKE" >
             <label for="myLongRun">Long Course RUN - 13.1mi</label>
-            <input type="checkbox" name="checkEvent[]" value="C" >
+            <input type="checkbox" name="checkEvent[]" value="Long Course RUN" >
             <label for="myOlySwim">OLYMPIC SWIM - 1,500 meters</label>
-            <input type="checkbox" name="checkEvent[]" value="D" >
+            <input type="checkbox" name="checkEvent[]" value="OLYMPIC SWIM" >
             <label for="myOlyBike">OLYMPIC BIKE - 28mi</label>
-            <input type="checkbox" name="checkEvent[]" value="E" >
+            <input type="checkbox" name="checkEvent[]" value="OLYMPIC BIKE" >
             <label for="myOlyRun">OLYMPIC RUN - 10K</label>
-            <input type="checkbox" name="checkEvent[]" value="F" >
+            <input type="checkbox" name="checkEvent[]" value="OLYMPIC RUN" >
             <label for="mySprint">Sprint</label>
-            <input type="checkbox" name="checkEvent[]" value="G">
+            <input type="checkbox" name="checkEvent[]" value="Sprint">
             <label for="myTryATri">Try-A-Tri</label>
-            <input type="checkbox" name="checkEvent[]" value="H">
+            <input type="checkbox" name="checkEvent[]" value="Try-A-Tri">
             <label for="myHalfMara">Half Marathon COURSE - 13.1-miles</label>
-            <input type="checkbox" name="checkEvent[]" value="I">
+            <input type="checkbox" name="checkEvent[]" value="Half Marathon COURSE">
             <label for= "my10k">10k COURSE</label>
-            <input type="checkbox" name="checkEvent[]" value="J">
+            <input type="checkbox" name="checkEvent[]" value="10k COURSE">
             <label for="mySplash">Splash n' Dash</label>
-            <input type="checkbox" name="checkEvent[]" value="K">
+            <input type="checkbox" name="checkEvent[]" value="Splash n' Dash">
           </div>
           <!--Special Accomendations-->
           <label for="myAccomendate">Any Special Accommodations?</label>

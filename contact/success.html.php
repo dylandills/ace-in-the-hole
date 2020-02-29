@@ -13,7 +13,6 @@
     <?php include '../includes/header.inc.html.php'; ?>
     <?php include '../includes/nav.inc.html.php'; ?>
     <main>
-        <h2>Thank you!</h2>
         <section>
           <span class="success">Thank you for Your inquiry! We will get back to you shortly.</span>
         </section>

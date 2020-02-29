@@ -14,7 +14,7 @@
     <?php include '../includes/nav.inc.html.php'; ?>
     <main>
         <section>
-          <span class="success">Thank you for registering!</span>
+          <span class="success">Thank you for Registering! Please Be Sure to Pick Up Your Packet!</span>
         </section>
     </main>
     <?php include '../includes/footer.inc.html.php'; ?>
