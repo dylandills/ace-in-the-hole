@@ -47,15 +47,15 @@
           <label for="myAge">*Age:</label>
           <input type="number" name="myAge" id="myAge" required>
           <label for="myREmail">*E-mail:</label>
-          <input type="text" name="myEmail" id="myEmail" required>
+          <input type="text" name="myREmail" id="myREmail" required>
           <!--Gender Checkboxes-->
           <div class="gender-wrapper">
             <label for="Female">Female</label>
-            <span><input type="radio" name="radio" value="Female"></span>
+            <span><input type="radio" name="gender" value="Female"></span>
             <label for="Male">Male</label>
-            <span><input type="radio" name="radio" value="Male"></span>
+            <span><input type="radio" name="gender" value="Male"></span>
             <label for="Nonbinary/Other">Nonbinary/Other</label>
-            <span><input type="radio" name="radio" value="Nonbinary/Other"></span>
+            <span><input type="radio" name="gender" value="Nonbinary/Other"></span>
           </div>
           <!--Emergency Contact Info-->
           <h2>Emergency Contact Info</h2>

@@ -7,6 +7,7 @@ if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
     $myRName = $_POST['myRName'];
     $myAge = $_POST['myAge'];
     $myREmail = $_POST['myREmail'];
+    $gender = $_POST['gender'];
     $myEName = $_POST['myEName'];
     $myENumber = $_POST['myENumber'];
     $event = implode(' | ', $_POST['checkEvent']);
@@ -47,6 +48,7 @@ Role: $role <br />
 Name: $myRName<br />
 Age: $myAge<br />
 Email: $myREmail<br />
+Gender: $gender<br />
 Emergency Contact: $myEName<br />
 Emergency Contact Phone Number: $myENumber<br />
 Event(s) Registering For: $event <br />
