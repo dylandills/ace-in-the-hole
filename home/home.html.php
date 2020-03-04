@@ -18,7 +18,22 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum lorem ante, vel dignissim massa eleifend vitae. In sagittis placerat sem, consequat consectetur turpis consequat sit amet. Sed sollicitudin posuere augue in suscipit.</p>
       </section>
       <section>
-        <h1>Weather Feed Here</h1>
+        <div class="report-container">
+          <h2><?php echo $data->name; ?> Weather Status</h2>
+          <div class="time">
+             <div><?php echo date("M, d, Y h:i:s A"); ?></div>
+             <div><?php echo ucwords($data->weather[0]->description); ?></div>
+          </div>
+          <div class="weather-forecast">
+             <img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" />
+             <?php echo $data->main->temp_max; ?>°F
+             <span class="min-temperature"><?php echo $data->main->temp_min; ?>°F</span>
+          </div>
+          <div class="time">
+             <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
+             <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
+          </div>
+        </div>
       </section>
       <section>
         <h1>Social Media Feed(s) here</h1>
