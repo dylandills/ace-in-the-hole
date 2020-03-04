@@ -72,9 +72,8 @@ body .header {
   width: 100%;
 }
 body .header .logo {
-  text-align: center;
-  height: 3.25em;
-  border: 1px solid #ff0000;
+  width: 100%;
+  height: auto;
 }
 body .menuIcon {
   display: flex;
@@ -257,12 +256,8 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 */
 @media only screen and (min-width: 480px) {
   body {
-    /*Header*/
     /*Main*/
     /*Form Styling*/
-  }
-  body .header .logo {
-    height: 4.5em;
   }
   body main {
     display: grid;
@@ -294,10 +289,6 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 The following CSS affects all screen sizes larger than 780 pixels wide.
 */
 @media screen and (min-width: 780px) {
-  /*Header*/
-  .header .logo {
-    height: 7em !important;
-  }
   /*Nav*/
   nav {
     max-height: 20vh !important;
