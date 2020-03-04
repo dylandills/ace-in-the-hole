@@ -8,8 +8,12 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/helper.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://use.fontawesome.com/25af06de28.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=563194357460179&autoLogAppEvents=1"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
   </head>
   <body>
     <?php include 'includes/header.inc.html.php'; ?>
@@ -62,8 +66,5 @@
       <?php include 'includes/button.inc.html.php'; ?>
     </main>
     <?php include 'includes/footer.inc.html.php'; ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://use.fontawesome.com/25af06de28.js"></script>
   </body>
 </html>
