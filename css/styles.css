@@ -141,6 +141,9 @@ body main section .report-container span.min-temperature {
 body main section .report-container .time {
   line-height: 25px;
 }
+body main section div.fb-feed {
+  margin-bottom: 5em !important;
+}
 body main .button {
   margin: 4em 0 !important;
 }
