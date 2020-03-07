@@ -24,7 +24,6 @@ body h1 {
   line-height: 1.6em;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
-  text-decoration: underline;
 }
 body h2 {
   color: #000000;
@@ -115,6 +114,9 @@ body main {
 }
 body main p {
   padding: 0.313em;
+}
+body main strong {
+  font-weight: 900;
 }
 body main section {
   padding: 20px;
