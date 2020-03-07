@@ -16,22 +16,22 @@
     <main>
       <section>
         <h1>Ace In The Hole</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum lorem ante, vel dignissim massa eleifend vitae. In sagittis placerat sem, consequat consectetur turpis consequat sit amet. Sed sollicitudin posuere augue in suscipit.</p>
-      <!---Weather Feed Section --->
+        <p>Etiam venenatis facilisis dolor nec dapibus. Nam condimentum felis augue, nec euismod justo convallis sed. Sed in lorem feugiat, pulvinar purus vel, mollis odio. Sed eget facilisis nisi. Vivamus venenatis ex urna. Integer eget quam vestibulum, lacinia metus vel, ultrices tellus. Quisque fringilla condimentum est, nec posuere massa tincidunt porta. Fusce tempor cursus lacus at congue. Phasellus vel lectus ultricies, hendrerit mauris id, pretium magna. Fusce suscipit commodo malesuada. Suspendisse quis metus sed enim feugiat sagittis. Praesent faucibus felis id vehicula aliquet. Nulla dictum facilisis dapibus. Ut congue, orci vel auctor gravida, velit elit blandit risus, non luctus est quam id orci. Vivamus vel velit a nunc convallis elementum.</p>
         <div class="report-container">
+          <!---Weather Feed Section --->
           <h2><?php echo $data->name; ?> Weather Status</h2>
           <div class="time">
-             <div><?php echo date("M, d, Y h:i:s A"); ?></div>
-             <div><?php echo ucwords($data->weather[0]->description); ?></div>
+            <div><?php echo date("M, d, Y h:i:s A"); ?></div>
+            <div><?php echo ucwords($data->weather[0]->description); ?></div>
           </div>
           <div class="weather-forecast">
-             <img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" />
-             <?php echo $data->main->temp_max; ?>°F
-             <span class="min-temperature"><?php echo $data->main->temp_min; ?>°F</span>
+            <img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" />
+            <?php echo $data->main->temp_max; ?>°F
+            <span class="min-temperature"><?php echo $data->main->temp_min; ?>°F</span>
           </div>
           <div class="time">
-             <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
-             <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
+            <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
+            <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
           </div>
         </div>
       </section>
@@ -52,10 +52,13 @@
         <!---Twitter --->
         <div class="twitter-feed">
           <h2>Twitter Feed</h2>
-          <a class="twitter-timeline" href="https://twitter.com/pcccas222?ref_src=twsrc%5Etfw">Tweets by pcccas222</a>
+          <a class="twitter-timeline" data-width="400" data-height="400" data-theme="light" href="https://twitter.com/Cas222Pcc?ref_src=twsrc%5Etfw">Tweets by Cas222Pcc</a>
         </div>
       </section>
+
+      <!---Image Gallery Section --->
       <section>
+        <h2>Image Gallery</h2>
         <!---Slider Gallery --->
         <div class="rslides_container">
           <ul class="rslides" id="slider1">
