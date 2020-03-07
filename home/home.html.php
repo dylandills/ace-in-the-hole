@@ -17,9 +17,7 @@
       <section>
         <h1>Ace In The Hole</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum lorem ante, vel dignissim massa eleifend vitae. In sagittis placerat sem, consequat consectetur turpis consequat sit amet. Sed sollicitudin posuere augue in suscipit.</p>
-      </section>
       <!---Weather Feed Section --->
-      <section>
         <div class="report-container">
           <h2><?php echo $data->name; ?> Weather Status</h2>
           <div class="time">
@@ -49,6 +47,8 @@
             </blockquote>
           </div>
         </div>
+      </section>
+      <section>
         <!---Twitter --->
         <div class="twitter-feed">
           <h2>Twitter Feed</h2>

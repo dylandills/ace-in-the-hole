@@ -221,13 +221,13 @@ body main .button .register-button {
   text-align: center;
   text-transform: uppercase;
   font-size: 1em;
-  padding: .5em;
+  padding: .5em 1em;
   width: 50%;
   transition: all 0.4s;
   cursor: pointer;
 }
 body main .button .register-button:hover span {
-  padding-right: 1.563em;
+  padding-right: 3em;
 }
 body main .button .register-button:hover span:after {
   opacity: 1;
@@ -321,7 +321,7 @@ body main form textarea:last-child {
   text-align: center;
   text-transform: uppercase;
   font-size: 1em;
-  padding: .5em;
+  padding: .5em 1em;
   width: 50%;
   transition: all 0.4s;
   cursor: pointer;
