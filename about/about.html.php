@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Ace In The Hole Events</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap" rel="stylesheet">
+    <link href="../css/responsiveslides.css" rel="stylesheet" type="text/css">
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
     <link href="../css/reset.css" rel="stylesheet" type="text/css">
     <link href="../css/helper.css" rel="stylesheet" type="text/css">
@@ -12,7 +13,7 @@
   <body>
     <?php include '../includes/header.inc.html.php'; ?>
     <?php include '../includes/nav.inc.html.php'; ?>
-    <main>
+    <main id="about-container">
       <section>
         <h1>About</h1>
         <p>Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds. We offer Events for Every Body.</p>
@@ -20,7 +21,21 @@
       <section>
         <h2>Annual Ace in the Hole Multisport Weekend</h2>
         <p>The Annual Ace in the Hole Multisport Weekend is a legendary event in the Oregon triathlon and running community. It has become a traditional destination race for athletes from across the nation.<br />
-        There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, but make sure you come to have fun!</p>
+          There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, but make sure you come to have fun!
+        </p>
+      </section>
+      <section>
+        <ul class="rslides2">
+          <li><img src="../img/ace10.jpg" alt=""></li>
+          <li><img src="../img/ace11.jpg" alt=""></li>
+          <li><img src="../img/ace12.jpg" alt=""></li>
+          <li><img src="../img/ace13.jpg" alt=""></li>
+          <li><img src="../img/ace14.jpg" alt=""></li>
+          <li><img src="../img/ace15.jpg" alt=""></li>
+          <li><img src="../img/ace16.jpg" alt=""></li>
+          <li><img src="../img/ace17.jpg" alt=""></li>
+          <li><img src="../img/ace18.jpg" alt=""></li>
+        </ul>
       </section>
       <section>
         <h2>Course Details</h2>
@@ -36,11 +51,13 @@
         <p>Half Marathon COURSE: Half-Marathon (13.1-miles): Half-Marathon event starts and finishes in the Athletes Village to the cheers of the enthusiastic crowd. Once finished, runners can enjoy the finish line festivities, including the Sports & Fitness Expo and live entertainment. Post-race refreshments will be provided and the Awards Ceremony for the Half-Marathon will begin once the results have been certified.</p><br />
         <p>10k COURSE: The 10K event starts and finishes in the Athletes Village. The paths are approximately 6 ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.</p><br />
         <p>Splash n' Dash: Kids event for participants ages 4 to 15. This is a 100 yard swim and a 50 yard dash. It is free if an adult registers for an event otherwise it is $25.</p>
+
       </section>
       <?php include '../includes/button.inc.html.php'; ?>
     </main>
     <?php include '../includes/footer.inc.html.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/responsiveslides.min.js"></script>
     <script src="../js/scripts.js"></script>
     <script src="https://use.fontawesome.com/25af06de28.js"></script>
   </body>

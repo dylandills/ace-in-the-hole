@@ -21,7 +21,7 @@
     <main>
       <section>
         <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum lorem ante, vel dignissim massa eleifend vitae. In sagittis placerat sem, consequat consectetur turpis consequat sit amet. Sed sollicitudin posuere augue in suscipit.</p>
+        <p>Have a question or a comment? Feel free to fill out the form below and we will get back to you as soon as we can!</p>
         <form method="post" action=" " id="inquiryForm">
           <p><span class="error">* required field</span></p>
           <!---Honeypot --->
@@ -35,12 +35,14 @@
           <!--Question/Comment -->
           <label for="myQuestion">*Question/Comment:</label>
           <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion" required></textarea>
-          <!--Athelete or Volunteer-->
+          <!--Athelete, Volunteer, or Interested Party-->
           <div class="athlete-wrapper">
              <label for="Athlete">Athlete</label>
              <span class="radio"><input type="radio" name="radio" value="Athlete"></span>
              <label for="Volunteer">Volunteer</label>
              <span class="radio"><input type="radio" name="radio" value="Volunteer"></span>
+             <label for="Interested Party">Interested Party</label>
+             <span class="radio"><input type="radio" name="radio" value="Interested Party"></span>
            </div>
           <!--Submit -->
            <input id="mySubmit" type="submit" value="Submit">

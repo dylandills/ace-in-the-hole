@@ -16,6 +16,7 @@
         <section>
           <span class="success">Thank you for Registering! Please Be Sure to Pick Up Your Packet!</span>
         </section>
+        <strong><a href="<?php echo BASE_URL; ?>register">Back To Registration Page</a></strong>
     </main>
     <?php include '../includes/footer.inc.html.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
