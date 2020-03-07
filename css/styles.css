@@ -6,6 +6,7 @@
 /*Transitions*/
 /*Centered Text*/
 /*Full Width*/
+/*Slider Style*/
 /*MOBILE STYLESHEET*/
 body {
   font-family: 'Roboto', sans-serif !important;
@@ -143,6 +144,69 @@ body main section .report-container .time {
 }
 body main section div.fb-feed {
   margin-bottom: 5em !important;
+}
+body main section .rslides_container {
+  float: left;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+body main section .rslides_container .rslides {
+  margin: 0 auto;
+}
+body main section .rslides_container .centered-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../img/themes.gif") no-repeat left top;
+  margin-top: -45px;
+}
+body main section .rslides_container .centered-btns_nav:active {
+  opacity: 1.0;
+}
+body main section .rslides_container .centered-btns_nav:focus {
+  outline: none;
+}
+body main section .rslides_container .centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+}
+body main section .rslides_container .centered-btns_tabs {
+  margin-top: 10px;
+  text-align: center;
+}
+body main section .rslides_container .centered-btns_tabs li {
+  display: inline;
+  float: none;
+  margin-right: 5px;
+}
+body main section .rslides_container .centered-btns_tabs li a {
+  text-indent: -9999px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #ccc;
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  width: 10px;
+  height: 10px;
+}
+body main section .rslides_container .centered-btns_tabs .centered-btns_here a {
+  background: #000000 !important;
 }
 body main .button {
   margin: 4em 0 !important;

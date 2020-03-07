@@ -5,15 +5,10 @@
     <meta charset="UTF-8">
     <title>Ace In The Hole Events</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap" rel="stylesheet">
+    <link href="css/responsiveslides.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/helper.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://use.fontawesome.com/25af06de28.js"></script>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=563194357460179&autoLogAppEvents=1"></script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
   </head>
   <body>
     <?php include 'includes/header.inc.html.php'; ?>
@@ -44,7 +39,7 @@
       </section>
       <!---Social Media Feed Section --->
       <section>
-        <!---Facebook --->
+        <!-- -Facebook --->
         <div class="fb-feed">
           <h2>Facebook Feed</h2>
           <div id="fb-root"></div>
@@ -61,10 +56,38 @@
         </div>
       </section>
       <section>
-        <h1>Slider Image Gallery Here</h1>
+        <!---Slider Gallery --->
+        <div class="rslides_container">
+          <ul class="rslides" id="slider1">
+            <li><img src="img/ace1.jpg" alt=""></li>
+            <li><img src="img/ace2.jpg" alt=""></li>
+            <li><img src="img/ace3.jpg" alt=""></li>
+            <li><img src="img/ace4.jpg" alt=""></li>
+            <li><img src="img/ace5.jpg" alt=""></li>
+            <li><img src="img/ace6.jpg" alt=""></li>
+            <li><img src="img/ace7.jpg" alt=""></li>
+            <li><img src="img/ace8.jpg" alt=""></li>
+            <li><img src="img/ace9.jpg" alt=""></li>
+            <li><img src="img/ace10.jpg" alt=""></li>
+            <li><img src="img/ace11.jpg" alt=""></li>
+            <li><img src="img/ace12.jpg" alt=""></li>
+            <li><img src="img/ace13.jpg" alt=""></li>
+            <li><img src="img/ace14.jpg" alt=""></li>
+            <li><img src="img/ace15.jpg" alt=""></li>
+            <li><img src="img/ace16.jpg" alt=""></li>
+            <li><img src="img/ace17.jpg" alt=""></li>
+            <li><img src="img/ace18.jpg" alt=""></li>
+          </ul>
+        </div>
       </section>
       <?php include 'includes/button.inc.html.php'; ?>
     </main>
     <?php include 'includes/footer.inc.html.php'; ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://use.fontawesome.com/25af06de28.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=563194357460179&autoLogAppEvents=1"></script> -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
