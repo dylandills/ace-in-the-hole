@@ -15,7 +15,8 @@
     <main>
       <section>
         <h1>Registration</h1>
-        <br />
+      </section>
+      <section>
         <h2>What To Bring</h2>
         <strong>Watch the weather closely. The show goes on no matter what the weather is doing.</strong><br /><br />
         <p>You must wear your chip timing piece during the entire event. You will be given a band that will hold your chip timing piece around your ankle throughout the entire event. Be sure that it is snapped tightly. Be sure to have your Chip Timing piece on before you start the race and be sure to step over the timing mats after each segment of the race. If you are wearing a wet-suit, make sure the timing piece goes under your wetsuit otherwise, you will have a very difficult time getting off your wet suit.<br /><br />
@@ -45,8 +46,6 @@
         </ul>
         <br />
         <strong>NOTE: Tech shirts guaranteed to pre-registered participants only.</strong>
-      </section>
-      <section>
         <h2>Packet Pickup</h2>
         <p>All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR. Packet pick up hours: Thursday 8-5, Friday 9-noon. No day of event packet pick up.</p>
         <br />
@@ -121,7 +120,6 @@
           <!--Submit Button-->
           <input id="submit" name="submit" type="submit" value="Submit">
         </form>
-        <span id="sucessMessage"></span>
       </section>
       <div class="button" align="center">
         <h2>Questions? We'd love to hear from you!</h2>
