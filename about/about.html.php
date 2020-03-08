@@ -25,17 +25,20 @@
         </p>
       </section>
       <section>
-        <ul class="rslides2">
-          <li><img src="../img/ace10.jpg" alt=""></li>
-          <li><img src="../img/ace11.jpg" alt=""></li>
-          <li><img src="../img/ace12.jpg" alt=""></li>
-          <li><img src="../img/ace13.jpg" alt=""></li>
-          <li><img src="../img/ace14.jpg" alt=""></li>
-          <li><img src="../img/ace15.jpg" alt=""></li>
-          <li><img src="../img/ace16.jpg" alt=""></li>
-          <li><img src="../img/ace17.jpg" alt=""></li>
-          <li><img src="../img/ace18.jpg" alt=""></li>
-        </ul>
+        <!---Slider Gallery --->
+        <div class="rslides_container">
+          <ul class="rslides" id="slider1">
+            <li><img src="../img/ace10.jpg" alt=""></li>
+            <li><img src="../img/ace11.jpg" alt=""></li>
+            <li><img src="../img/ace12.jpg" alt=""></li>
+            <li><img src="../img/ace13.jpg" alt=""></li>
+            <li><img src="../img/ace14.jpg" alt=""></li>
+            <li><img src="../img/ace15.jpg" alt=""></li>
+            <li><img src="../img/ace16.jpg" alt=""></li>
+            <li><img src="../img/ace17.jpg" alt=""></li>
+            <li><img src="../img/ace18.jpg" alt=""></li>
+          </ul>
+        </div>
       </section>
       <section>
         <h2>Course Details</h2>

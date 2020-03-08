@@ -119,7 +119,6 @@ body main strong {
   font-weight: 900;
 }
 body main section {
-  padding: 20px;
   margin: 1em 0;
 }
 body main section .report-container {
@@ -148,12 +147,12 @@ body main section div.fb-feed {
 }
 body main section .rslides_container {
   float: left;
-  max-width: 100%;
+  min-width: 100%;
   margin-bottom: 50px;
   position: relative;
 }
-body main section .rslides_container .rslides {
-  margin: 0 auto;
+body main section .rslides_container .rslides li img {
+  height: 300px;
 }
 body main section .rslides_container .centered-btns_nav {
   z-index: 3;
@@ -370,8 +369,6 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   }
   body main#about-container .rslides2 img {
     display: block;
-    height: auto;
-    float: left;
     width: 100%;
     height: 400px;
     border: 0;

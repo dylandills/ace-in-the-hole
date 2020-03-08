@@ -14,9 +14,28 @@
     <?php include 'includes/header.inc.html.php'; ?>
     <?php include 'includes/nav.inc.html.php'; ?>
     <main>
+      <!---Image Gallery Section --->
       <section>
-        <h1>Ace In The Hole</h1>
-        <p>Etiam venenatis facilisis dolor nec dapibus. Nam condimentum felis augue, nec euismod justo convallis sed. Sed in lorem feugiat, pulvinar purus vel, mollis odio. Sed eget facilisis nisi. Vivamus venenatis ex urna. Integer eget quam vestibulum, lacinia metus vel, ultrices tellus. Quisque fringilla condimentum est, nec posuere massa tincidunt porta. Fusce tempor cursus lacus at congue. Phasellus vel lectus ultricies, hendrerit mauris id, pretium magna. Fusce suscipit commodo malesuada. Suspendisse quis metus sed enim feugiat sagittis. Praesent faucibus felis id vehicula aliquet. Nulla dictum facilisis dapibus. Ut congue, orci vel auctor gravida, velit elit blandit risus, non luctus est quam id orci. Vivamus vel velit a nunc convallis elementum.</p>
+        <!---Slider Gallery --->
+        <div class="rslides_container">
+          <ul class="rslides" id="slider1">
+            <li><img src="img/ace1.jpg" alt=""></li>
+            <li><img src="img/ace2.jpg" alt=""></li>
+            <li><img src="img/ace3.jpg" alt=""></li>
+            <li><img src="img/ace4.jpg" alt=""></li>
+            <li><img src="img/ace5.jpg" alt=""></li>
+            <li><img src="img/ace6.jpg" alt=""></li>
+            <li><img src="img/ace7.jpg" alt=""></li>
+            <li><img src="img/ace8.jpg" alt=""></li>
+            <li><img src="img/ace9.jpg" alt=""></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <p>Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds. We offer Events for Every Body. You can <a href="<?php echo BASE_URL; ?>about">read more</a> here.
+        </p>
+      </section>
+      <section>
         <div class="report-container">
           <!---Weather Feed Section --->
           <h2><?php echo $data->name; ?> Weather Status</h2>
@@ -39,7 +58,6 @@
       <section>
         <!-- -Facebook --->
         <div class="fb-feed">
-          <h2>Facebook Feed</h2>
           <div id="fb-root"></div>
           <div class="fb-page" data-href="https://www.facebook.com/Cas222Aceinthehole-110661963841617/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
             <blockquote cite="https://www.facebook.com/Cas222Aceinthehole-110661963841617/" class="fb-xfbml-parse-ignore">
@@ -47,31 +65,9 @@
             </blockquote>
           </div>
         </div>
-      </section>
-      <section>
         <!---Twitter --->
         <div class="twitter-feed">
-          <h2>Twitter Feed</h2>
           <a class="twitter-timeline" data-width="400" data-height="400" data-theme="light" href="https://twitter.com/Cas222Pcc?ref_src=twsrc%5Etfw">Tweets by Cas222Pcc</a>
-        </div>
-      </section>
-
-      <!---Image Gallery Section --->
-      <section>
-        <h2>Image Gallery</h2>
-        <!---Slider Gallery --->
-        <div class="rslides_container">
-          <ul class="rslides" id="slider1">
-            <li><img src="img/ace1.jpg" alt=""></li>
-            <li><img src="img/ace2.jpg" alt=""></li>
-            <li><img src="img/ace3.jpg" alt=""></li>
-            <li><img src="img/ace4.jpg" alt=""></li>
-            <li><img src="img/ace5.jpg" alt=""></li>
-            <li><img src="img/ace6.jpg" alt=""></li>
-            <li><img src="img/ace7.jpg" alt=""></li>
-            <li><img src="img/ace8.jpg" alt=""></li>
-            <li><img src="img/ace9.jpg" alt=""></li>
-          </ul>
         </div>
       </section>
       <?php include 'includes/button.inc.html.php'; ?>
