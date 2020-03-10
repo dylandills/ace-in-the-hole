@@ -10,7 +10,6 @@
 /*MOBILE STYLESHEET*/
 body {
   font-family: 'Roboto', sans-serif !important;
-  /*Headings*/
   /*Global Styles*/
   /*Header*/
   /*Nav*/
@@ -24,6 +23,7 @@ body h1 {
   line-height: 1.6em;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
+  text-align: center;
 }
 body h2 {
   color: #000000;
@@ -32,6 +32,7 @@ body h2 {
   line-height: 1.4em;
   margin-top: 0.7em;
   margin-bottom: 0.7em;
+  text-align: center;
 }
 body h3 {
   color: #000000;
@@ -40,6 +41,7 @@ body h3 {
   line-height: 1.1em;
   margin-top: 0.55em;
   margin-bottom: 0.55em;
+  text-align: center;
 }
 body h4 {
   color: #000000;
@@ -48,6 +50,7 @@ body h4 {
   line-height: 0.9em;
   margin-top: 0.45em;
   margin-bottom: 0.45em;
+  text-align: center;
 }
 body h5 {
   color: #000000;
@@ -56,6 +59,7 @@ body h5 {
   line-height: 0.85em;
   margin-top: 0.425em;
   margin-bottom: 0.425em;
+  text-align: center;
 }
 body h6 {
   color: #000000;
@@ -64,6 +68,7 @@ body h6 {
   line-height: 0.75em;
   margin-top: 0.375em;
   margin-bottom: 0.375em;
+  text-align: center;
 }
 body i {
   color: #ff0000;
@@ -109,8 +114,7 @@ body nav ul li a {
 }
 body main {
   text-align: center;
-  /*Button*/
-  /*Form Stylings*/
+  /*Section*/
 }
 body main p {
   padding: 0.313em;
@@ -120,6 +124,36 @@ body main strong {
 }
 body main section {
   margin: 1em 0;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+body main section .avatar {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 5px white solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+body main section .avatar img {
+  width: 100%;
+  height: auto;
 }
 body main section .report-container {
   width: 100%;
@@ -347,7 +381,6 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 @media only screen and (min-width: 480px) {
   body {
     /*Main*/
-    /*Form Styling*/
   }
   body main#about-container .rslides2 {
     position: relative;
@@ -382,7 +415,6 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     grid-template-rows: auto;
     grid-template-areas: "header header" "main side" "footer footer";
     grid-gap: 10px;
-    /*Button Styling*/
   }
   body main section:first-child {
     grid-area: header;
@@ -442,9 +474,6 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
   }
   .menuIcon {
     display: none !important;
-  }
-  main {
-    /*Form Styling*/
   }
   main .rslides li img {
     height: 600px !important;

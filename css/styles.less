@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Roboto', sans-serif !important;
-  /*Headings*/
+  // Headings
   h1 {
       .headingStyle(@color1; 1.6em);
   }
@@ -87,8 +87,40 @@ body {
     strong {
       font-weight: 900;
     }
+    /*Section*/
     section {
       margin: 1em 0;
+      // 404 Error Styles
+      @keyframes float {
+        0% {
+          box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+          transform: translatey(0px);
+        }
+        50% {
+          box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+          transform: translatey(-20px);
+        }
+        100% {
+          box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+          transform: translatey(0px);
+        }
+      }
+      .avatar {
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+        box-sizing: border-box;
+        border: 5px white solid;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
       // Weather Feed
       .report-container {
         width: 100%;
@@ -182,7 +214,7 @@ body {
         }
       }
     }
-    /*Button*/
+    // Button Styling
     .button {
       margin: 4em 0 !important;
       .register-button {
@@ -211,7 +243,7 @@ body {
         }
       }
     }
-    /*Form Stylings*/
+    // Form Stylings
     form {
       color: @color1;
       display: flex;
@@ -360,13 +392,13 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
           }
         }
       }
-      /*Button Styling*/
+      // Button Styling
       .button {
         grid-column-start: 1;
         grid-column-end: -1;
       }
     }
-    /*Form Styling*/
+    // Form Styling
     form {
       width: 75%;
       margin: auto;
@@ -417,7 +449,7 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
           height: 600px !important;
         }
       }
-    /*Form Styling*/
+    // Form Styling
     form {
       width: 45% !important;
       margin: auto !important;
