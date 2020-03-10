@@ -56,21 +56,24 @@
       </section>
       <!---Social Media Feed Section --->
       <section>
-        <!-- -Facebook --->
-        <div class="fb-feed">
-          <div id="fb-root"></div>
-          <div class="fb-page" data-href="https://www.facebook.com/Cas222Aceinthehole-110661963841617/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-            <blockquote cite="https://www.facebook.com/Cas222Aceinthehole-110661963841617/" class="fb-xfbml-parse-ignore">
-              <a href="https://www.facebook.com/Cas222Aceinthehole-110661963841617/">Cas222Aceinthehole</a>
-            </blockquote>
+        <div class="social-container">
+          <!-- -Facebook --->
+          <div class="fb-feed">
+            <div id="fb-root"></div>
+            <div class="fb-page" data-href="https://www.facebook.com/Cas222Aceinthehole-110661963841617/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/Cas222Aceinthehole-110661963841617/" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/Cas222Aceinthehole-110661963841617/">Cas222Aceinthehole</a>
+              </blockquote>
+            </div>
+          </div>
+          <!---Twitter --->
+          <div class="twitter-feed">
+            <a class="twitter-timeline" data-width="400" data-height="400" data-theme="light" href="https://twitter.com/Cas222Pcc?ref_src=twsrc%5Etfw">Tweets by Cas222Pcc</a>
           </div>
         </div>
-        <!---Twitter --->
-        <div class="twitter-feed">
-          <a class="twitter-timeline" data-width="400" data-height="400" data-theme="light" href="https://twitter.com/Cas222Pcc?ref_src=twsrc%5Etfw">Tweets by Cas222Pcc</a>
-        </div>
+        <h1>Like what you see? <br />Please register for our Annual Ace in the Hole Multisport Weekend!</h1>
+        <?php include 'includes/button.inc.html.php'; ?>
       </section>
-      <?php include 'includes/button.inc.html.php'; ?>
     </main>
     <?php include 'includes/footer.inc.html.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

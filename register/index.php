@@ -61,7 +61,7 @@ EOT;
     //but you shouldn't display errors to users - process the error, log it on your server.
         echo 'Mailer error: ' . $mail->ErrorInfo;
     } else {
-        include 'success.html.php';
+      include 'success.html.php';
     }
     } else {
       include 'register.html.php';

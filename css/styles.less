@@ -275,6 +275,9 @@ body {
           .button-style();
         }
       }
+      input[type=submit] {
+        padding: .8em;
+      }
     }
   }
   /*Footer*/
@@ -348,8 +351,13 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
           grid-area: footer;
         }
         //Social Media Feed
-        div.fb-feed {
-          padding: 1em;
+        .social-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          div.fb-feed, div.twitter-feed {
+            width: 50%;
+          }
         }
       }
       /*Button Styling*/
@@ -403,17 +411,23 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
   .menuIcon {
     display: none !important;
   }
-
-  /*Form Styling*/
-  form {
-    width: 45% !important;
-    margin: auto !important;
-    .event-wrapper {
-      grid-column: 95% 5% !important;
-      text-align: left;
-    }
-    input {
-      width: 50%;
+  main {
+    .rslides li {
+        img {
+          height: 600px !important;
+        }
+      }
+    /*Form Styling*/
+    form {
+      width: 45% !important;
+      margin: auto !important;
+      .event-wrapper {
+        grid-column: 95% 5% !important;
+        text-align: left;
+      }
+      input {
+        width: 50%;
+      }
     }
   }
 }

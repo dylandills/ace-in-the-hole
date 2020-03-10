@@ -325,6 +325,9 @@ body main form textarea:last-child {
   transition: all 0.4s;
   cursor: pointer;
 }
+body main form input[type=submit] {
+  padding: .8em;
+}
 body footer {
   background: #000000;
   width: 100%;
@@ -387,8 +390,14 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   body main section:nth-child(4) {
     grid-area: footer;
   }
-  body main section div.fb-feed {
-    padding: 1em;
+  body main section .social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body main section .social-container div.fb-feed,
+  body main section .social-container div.twitter-feed {
+    width: 50%;
   }
   body main .button {
     grid-column-start: 1;
@@ -434,16 +443,21 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
   .menuIcon {
     display: none !important;
   }
-  /*Form Styling*/
-  form {
+  main {
+    /*Form Styling*/
+  }
+  main .rslides li img {
+    height: 600px !important;
+  }
+  main form {
     width: 45% !important;
     margin: auto !important;
   }
-  form .event-wrapper {
+  main form .event-wrapper {
     grid-column: 95% 5% !important;
     text-align: left;
   }
-  form input {
+  main form input {
     width: 50%;
   }
 }
