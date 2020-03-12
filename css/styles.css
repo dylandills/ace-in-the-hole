@@ -20,17 +20,14 @@ body h1 {
   color: #000000;
   font-size: 1.6em;
   font-weight: bold;
-  line-height: 1.6em;
-  margin-top: 0.8em;
   margin-bottom: 0.8em;
   text-align: center;
+  margin-top: 0.8em;
 }
 body h2 {
   color: #000000;
   font-size: 1.4em;
   font-weight: bold;
-  line-height: 1.4em;
-  margin-top: 0.7em;
   margin-bottom: 0.7em;
   text-align: center;
 }
@@ -38,8 +35,6 @@ body h3 {
   color: #000000;
   font-size: 1.1em;
   font-weight: bold;
-  line-height: 1.1em;
-  margin-top: 0.55em;
   margin-bottom: 0.55em;
   text-align: center;
 }
@@ -47,8 +42,6 @@ body h4 {
   color: #000000;
   font-size: 0.9em;
   font-weight: bold;
-  line-height: 0.9em;
-  margin-top: 0.45em;
   margin-bottom: 0.45em;
   text-align: center;
 }
@@ -56,8 +49,6 @@ body h5 {
   color: #000000;
   font-size: 0.85em;
   font-weight: bold;
-  line-height: 0.85em;
-  margin-top: 0.425em;
   margin-bottom: 0.425em;
   text-align: center;
 }
@@ -65,8 +56,6 @@ body h6 {
   color: #000000;
   font-size: 0.75em;
   font-weight: bold;
-  line-height: 0.75em;
-  margin-top: 0.375em;
   margin-bottom: 0.375em;
   text-align: center;
 }
@@ -111,6 +100,10 @@ body nav ul li a {
   padding: 0.625em;
   width: 100%;
   text-decoration: none;
+}
+body #about-container section p {
+  text-align: left;
+  padding: 0 1em;
 }
 body main {
   text-align: center;
@@ -176,17 +169,23 @@ body main section .report-container span.min-temperature {
 body main section .report-container .time {
   line-height: 25px;
 }
-body main section div.fb-feed {
+body main section .social-container {
+  background-color: #000000;
+}
+body main section .social-container .fb-feed,
+body main section .social-container .twitter-feed {
   padding: 2em;
 }
 body main section .rslides_container {
   float: left;
-  min-width: 100%;
+  width: 100%;
   margin-bottom: 50px;
   position: relative;
 }
 body main section .rslides_container .rslides li img {
-  height: 300px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 body main section .rslides_container .centered-btns_nav {
   z-index: 3;
@@ -382,32 +381,22 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   body {
     /*Main*/
   }
-  body main#about-container .rslides2 {
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  body h2 {
+    color: #000000;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    text-align: center;
   }
-  body main#about-container .rslides2 li {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
+  body h3 {
+    color: #000000;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+    text-align: center;
   }
-  body main#about-container .rslides2 li:first-child {
-    position: relative;
-    display: block;
-    float: left;
-  }
-  body main#about-container .rslides2 img {
-    display: block;
-    width: 100%;
-    height: 400px;
-    border: 0;
+  body #about-container section p {
+    padding: 0 1.5em;
   }
   body main {
     display: grid;
@@ -427,9 +416,11 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     flex-direction: row;
     justify-content: center;
   }
-  body main section .social-container div.fb-feed,
-  body main section .social-container div.twitter-feed {
+  body main section .social-container .fb-feed {
     width: 50%;
+  }
+  body main section .social-container .twitter-feed {
+    height: 100%;
   }
   body main .button {
     grid-column-start: 1;
@@ -447,46 +438,65 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 The following CSS affects all screen sizes larger than 780 pixels wide.
 */
 @media screen and (min-width: 780px) {
-  /*Nav*/
-  nav {
+  body {
+    /*Nav*/
+  }
+  body h2 {
+    color: #000000;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 0.9em;
+    text-align: center;
+  }
+  body h3 {
+    color: #000000;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    text-align: center;
+  }
+  body nav {
     max-height: 20vh !important;
     background: #000000;
     width: 100%;
   }
-  nav ul {
+  body nav ul {
     padding: 0;
     margin: 0;
   }
-  nav ul li {
+  body nav ul li {
     display: inline-block;
     float: left;
     list-style: none;
     padding: 0 0 0 5px;
     margin: 0;
   }
-  nav ul li a {
+  body nav ul li a {
     width: 100%;
     display: inline-block;
     color: #fff;
   }
-  nav ul li a img {
+  body nav ul li a img {
     vertical-align: middle;
   }
-  .menuIcon {
+  body .menuIcon {
     display: none !important;
   }
-  main .rslides li img {
+  body main #about-container section p {
+    padding: 0 2em;
+  }
+  body main .rslides li img {
     height: 600px !important;
   }
-  main form {
+  body main form {
     width: 45% !important;
     margin: auto !important;
   }
-  main form .event-wrapper {
+  body main form .event-wrapper {
     grid-column: 95% 5% !important;
     text-align: left;
   }
-  main form input {
+  body main form input {
     width: 50%;
   }
 }

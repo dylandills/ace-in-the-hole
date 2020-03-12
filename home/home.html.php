@@ -68,7 +68,7 @@
           </div>
           <!---Twitter --->
           <div class="twitter-feed">
-            <a class="twitter-timeline" data-width="400" data-height="400" data-theme="light" href="https://twitter.com/Cas222Pcc?ref_src=twsrc%5Etfw">Tweets by Cas222Pcc</a>
+            <a class="twitter-timeline" data-theme="light" href="https://twitter.com/Cas222Pcc?ref_src=twsrc%5Etfw">Tweets by Cas222Pcc</a>
           </div>
         </div>
         <h1>Like what you see? <br />Please register for our Annual Ace in the Hole Multisport Weekend!</h1>
