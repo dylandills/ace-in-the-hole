@@ -89,7 +89,6 @@ body nav.menuOpen {
 }
 body nav ul li {
   display: block;
-  border-top: 1px solid #ffffff;
   padding: 0.625em;
 }
 body nav ul li:hover {
@@ -334,7 +333,7 @@ body main form .gender-wrapper #gender {
   max-width: 100%;
   box-sizing: border-box;
   margin-bottom: 1em;
-  border: 1px solid #ff0000;
+  border: 1px solid #000000;
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
   border-radius: .5em;
   -moz-appearance: none;
@@ -347,12 +346,11 @@ body main form .gender-wrapper #gender {
   background-size: .65em auto, 100%;
 }
 body main form .gender-wrapper #gender:hover {
-  border-color: #ff0000;
+  border-color: #000000;
 }
 body main form .gender-wrapper #gender:focus {
-  border-color: #ff0000;
+  border-color: #000000;
   box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
-  box-shadow: 0 0 0 3px -moz-mac-focusring;
   color: #000000;
   outline: none;
 }
@@ -428,15 +426,16 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     margin-bottom: 0.7em;
     text-align: center;
   }
-  body #about-container section p {
-    padding: 0 1.5em;
-  }
   body main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "header header" "main side" "footer footer";
     grid-gap: 10px;
+  }
+  body main section {
+    padding: .5em;
+    text-align: left;
   }
   body main section:first-child {
     grid-area: header;
@@ -489,9 +488,10 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
     text-align: center;
   }
   body nav {
-    max-height: 20vh !important;
-    background: #000000;
     width: 100%;
+    max-height: 1000px;
+    background: #000000;
+    padding: 0;
   }
   body nav ul {
     padding: 0;
@@ -501,25 +501,19 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
     display: inline-block;
     float: left;
     list-style: none;
-    padding: 0 0 0 5px;
     margin: 0;
   }
   body nav ul li a {
     width: 100%;
-    display: inline-block;
-    color: #fff;
-  }
-  body nav ul li a img {
-    vertical-align: middle;
+    display: block;
+    padding: 1em;
+    color: #ffffff;
   }
   body .menuIcon {
     display: none !important;
   }
   body main #about-container section p {
     padding: 0 2em;
-  }
-  body main .rslides li img {
-    height: 600px !important;
   }
   body main form {
     width: 45% !important;
