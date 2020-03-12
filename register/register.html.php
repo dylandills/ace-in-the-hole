@@ -16,7 +16,7 @@
       <section>
         <h1>Registration</h1>
       </section>
-      <section>
+      <section class="bring">
         <h2>What To Bring</h2>
         <strong>Watch the weather closely. The show goes on no matter what the weather is doing.</strong><br /><br />
         <p>You must wear your chip timing piece during the entire event. You will be given a band that will hold your chip timing piece around your ankle throughout the entire event. Be sure that it is snapped tightly. Be sure to have your Chip Timing piece on before you start the race and be sure to step over the timing mats after each segment of the race. If you are wearing a wet-suit, make sure the timing piece goes under your wetsuit otherwise, you will have a very difficult time getting off your wet suit.<br /><br />
@@ -35,21 +35,23 @@
           <li>Sprint - $90</li>
           <li>Try-a-Tri - $65</li>
         </ul>
+        <br />
         <h2>Cost Includes</h2>
-        <ul>
+        <ul class="cost">
           <li>Food & Beer</li>
           <li>Access to the weekend's live entertainment & Fitness Expo</li>
           <li>Commemorative Finisher medal</li>
           <li>Accurate Chip Timing for competitive races</li>
-          <li>ce in the Hole Multisport Weekend Tech Shirt</li>
+          <li>Ace in the Hole Multisport Weekend Tech Shirt</li>
           <li>Post-event party & entertainment</li>
         </ul>
         <br />
         <strong>NOTE: Tech shirts guaranteed to pre-registered participants only.</strong>
+        <br /><br />
         <h2>Packet Pickup</h2>
         <p>All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR. Packet pick up hours: Thursday 8-5, Friday 9-noon. No day of event packet pick up.</p>
         <br />
-        <strong>For More Information On Course Details, please check out our <a href="<?php echo BASE_URL; ?>about">about</a> page</strong>
+        <strong>For More Information On Course Details, please check out our <a href="<?php echo BASE_URL; ?>about" class="read-link">about page</a></strong>
       </section>
       <section>
         <h2>Register</h2>
@@ -125,7 +127,7 @@
       <div class="button" align="center">
         <h2>Questions? We'd love to hear from you!</h2>
         <br />
-        <a class="register-button" a href="<?php echo BASE_URL; ?>contact" rel="nofollow">
+        <a class="contact-button" a href="<?php echo BASE_URL; ?>contact" rel="nofollow">
           <span>Contact Us</span>
         </a>
       </div>

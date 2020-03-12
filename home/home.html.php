@@ -32,8 +32,8 @@
         </div>
       </section>
       <section>
-        <p>Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds. We offer Events for Every Body. You can <a href="<?php echo BASE_URL; ?>about">read more</a> here.
-        </p>
+        <h3>Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds. We offer Events for Every Body.</h3>
+          <h3>You can <a href="<?php echo BASE_URL; ?>about" class="read-link">read more</a> here.</h3>
       </section>
       <section>
         <div class="report-container">
@@ -71,7 +71,8 @@
             <a class="twitter-timeline" data-theme="light" href="https://twitter.com/Cas222Pcc?ref_src=twsrc%5Etfw">Tweets by Cas222Pcc</a>
           </div>
         </div>
-        <h1>Like what you see? <br />Please register for our Annual Ace in the Hole Multisport Weekend!</h1>
+        <br />
+        <h1>Like what you see? <br /><br />Please register for our Annual Ace in the Hole Multisport Weekend!</h1>
         <?php include 'includes/button.inc.html.php'; ?>
       </section>
     </main>

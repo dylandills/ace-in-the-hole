@@ -22,7 +22,6 @@ body h1 {
   font-weight: bold;
   margin-bottom: 0.8em;
   text-align: center;
-  margin-top: 0.8em;
 }
 body h2 {
   color: #000000;
@@ -90,6 +89,7 @@ body nav.menuOpen {
 body nav ul li {
   display: block;
   padding: 0.625em;
+  border: 1px solid #ffffff;
 }
 body nav ul li:hover {
   background: #ff0000;
@@ -142,6 +142,15 @@ body main section .avatar {
 body main section .avatar img {
   width: 100%;
   height: auto;
+}
+body main section .read-link {
+  color: #000000;
+}
+body main section .read-link:hover {
+  color: #ff0000;
+}
+body main section .read-link:visited {
+  color: #ff0000;
 }
 body main section .report-container {
   width: 100%;
@@ -239,7 +248,8 @@ body main section .rslides_container .centered-btns_tabs .centered-btns_here a {
 body main .button {
   margin: 4em 0 !important;
 }
-body main .button .register-button {
+body main .button .register-button,
+body main .button .contact-button {
   margin: .5em 0 !important;
   align-self: center;
   border-radius: 4px;
@@ -254,20 +264,24 @@ body main .button .register-button {
   cursor: pointer;
   padding: 1em 1em;
 }
-body main .button .register-button:hover span {
+body main .button .register-button:hover span,
+body main .button .contact-button:hover span {
   padding-right: 3em;
 }
-body main .button .register-button:hover span:after {
+body main .button .register-button:hover span:after,
+body main .button .contact-button:hover span:after {
   opacity: 1;
   right: 0;
 }
-body main .button .register-button span {
+body main .button .register-button span,
+body main .button .contact-button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.4s;
 }
-body main .button .register-button span:after {
+body main .button .register-button span:after,
+body main .button .contact-button span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -393,6 +407,13 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   body {
     /*Main*/
   }
+  body h1 {
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+  }
   body h2 {
     color: #000000;
     font-size: 1.6em;
@@ -407,15 +428,18 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     margin-bottom: 0.7em;
     text-align: center;
   }
+  body .about-container {
+    text-align: left !important;
+    padding: .5em;
+  }
   body main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "header header" "main side" "footer footer";
-    grid-gap: 10px;
+    grid-gap: 20px;
   }
-  body main section {
-    padding: .5em;
+  body main .bring {
     text-align: left;
   }
   body main section:first-child {
@@ -423,6 +447,11 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   }
   body main section:nth-child(4) {
     grid-area: footer;
+  }
+  body main section .cost {
+    margin-left: 3em;
+    text-align: left;
+    list-style: circle;
   }
   body main section .social-container {
     display: flex;
@@ -454,6 +483,13 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
   body {
     /*Nav*/
   }
+  body h1 {
+    color: #000000;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 1.1em;
+    text-align: center;
+  }
   body h2 {
     color: #000000;
     font-size: 1.8em;
@@ -482,6 +518,7 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
     display: inline-block;
     float: left;
     list-style: none;
+    border: 1px solid #000000;
     margin: 0;
   }
   body nav ul li a {
@@ -493,8 +530,8 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
   body .menuIcon {
     display: none !important;
   }
-  body main #about-container section p {
-    padding: 0 2em;
+  body main section {
+    padding: .5em;
   }
   body main form {
     width: 45% !important;

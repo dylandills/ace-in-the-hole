@@ -10,7 +10,6 @@ body {
   // Headings
   h1 {
     .headingStyle(@color1; 1.6em);
-    margin-top: 0.8em;
   }
 
   h2 {
@@ -66,6 +65,7 @@ nav {
       li {
         display: block;
         padding: 0.625em;
+        border: 1px solid @color2;
         &:hover {
           background: @color3;
         }
@@ -119,6 +119,16 @@ nav {
         img {
           .full-width;
           height: auto;
+        }
+      }
+      //About link
+      .read-link {
+        color: @color1;
+        &:hover {
+          color: @color3;
+        }
+        &:visited {
+          color: @color3;
         }
       }
       // Weather Feed
@@ -222,7 +232,7 @@ nav {
     // Button Styling
     .button {
       margin: 4em 0 !important;
-      .register-button {
+      .register-button, .contact-button {
         .button-style;
         padding: 1em 1em;
         &:hover span {
@@ -360,6 +370,10 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 @media only screen and (min-width: 480px) {
   body {
     //Heading Styles
+    h1 {
+      .headingStyle(@color1; 2em);
+    }
+
     h2 {
       .headingStyle(@color1; 1.6em);
     }
@@ -367,7 +381,11 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     h3 {
      .headingStyle(@color1; 1.4em);
     }
-
+    //About Main Container Styles
+    .about-container {
+      text-align: left !important;
+      padding: .5em;
+    }
     /*Main*/
     main {
       display: grid;
@@ -376,15 +394,21 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
       grid-template-areas: "header header"
       "main side"
       "footer footer";
-      grid-gap: 10px;
-      section {
-        padding: .5em;
+      grid-gap: 20px;
+      .bring {
         text-align: left;
+      }
+      section {
         &:first-child {
           grid-area: header;
         }
         &:nth-child(4) {
           grid-area: footer;
+        }
+        .cost {
+          margin-left: 3em;
+          text-align: left;
+          list-style: circle;
         }
         //Social Media Feed
         .social-container {
@@ -423,6 +447,10 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
 
 @media screen and (min-width: 780px) {
   body {
+    h1 {
+      .headingStyle(@color1; 2.2em);
+    }
+
     h2 {
       .headingStyle(@color1; 1.8em);
     }
@@ -443,6 +471,7 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
           display: inline-block;
           float: left;
           list-style: none;
+          border: 1px solid @color1;
           margin: 0;
           a {
             .full-width;
@@ -457,11 +486,8 @@ The following CSS affects all screen sizes larger than 780 pixels wide.
       display: none !important;
     }
     main {
-      //About Container
-      #about-container {
-        section p {
-          padding: 0 2em;
-        }
+      section {
+        padding: .5em;
       }
       // Form Styling
       form {
