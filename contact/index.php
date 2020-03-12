@@ -6,7 +6,7 @@ if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
     $myName = $_POST['myName'];
     $myEmail = $_POST['myEmail'];
     $myQuestion = $_POST['myQuestion'];
-    $role = $_POST['radio'];
+    $role = $_POST['role'];
     date_default_timezone_set('Etc/UTC');
 
     require '../PHPMailer/PHPMailerAutoload.php';

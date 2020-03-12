@@ -61,10 +61,10 @@
           <!--Athelete or Volunteer-->
           <p>Will you be coming as an Athlete or a Volunteer?</p>
           <div class="athlete-wrapper">
-             <label for="Athlete">Athlete</label>
-             <span><input type="radio" name="radio" value="Athlete"></span>
-             <label for="Volunteer">Volunteer</label>
-             <span><input type="radio" name="radio" value="Volunteer"></span>
+            <select id="role">
+              <option value="Athlete" name="role" >Athlete</option>
+              <option value="Volunteer" name="role">Volunteer</option>
+            </select>
            </div>
           <h2>Your Info</h2>
           <label for="myRName">*Name:</label>

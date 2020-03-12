@@ -3,7 +3,7 @@ $msg = '';
 //Don't run this unless we're handling a form submission
 if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
     /*Since the form has been submitted, let's capture the submission values so we can display them to the user on the success page*/
-    $role = $_POST['radio'];
+    $role = $_POST['role'];
     $myRName = $_POST['myRName'];
     $myAge = $_POST['myAge'];
     $myREmail = $_POST['myREmail'];

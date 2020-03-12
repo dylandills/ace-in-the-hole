@@ -21,9 +21,9 @@
     <main>
       <section>
         <h1>Contact</h1>
-        <p>Have a question or a comment? Feel free to fill out the form below and we will get back to you as soon as we can!</p>
+        <p style="text-align: center;">Have a question or a comment? Feel free to fill out the form below and we will get back to you as soon as we can!</p><br />
         <form method="post" action=" " id="inquiryForm">
-          <p><span class="error">* required field</span></p>
+          <p><span class="error">* required field</span></p><br />
           <!---Honeypot --->
           <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
           <!--Name -->
@@ -34,15 +34,14 @@
           <input type="text" name="myEmail" id="myEmail" required>
           <!--Question/Comment -->
           <label for="myQuestion">*Question/Comment:</label>
-          <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion" required></textarea>
+          <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion" required></textarea><br />
           <!--Athelete, Volunteer, or Interested Party-->
           <div class="athlete-wrapper">
-             <label for="Athlete">Athlete</label>
-             <span class="radio"><input type="radio" name="radio" value="Athlete"></span>
-             <label for="Volunteer">Volunteer</label>
-             <span class="radio"><input type="radio" name="radio" value="Volunteer"></span>
-             <label for="Interested Party">Interested Party</label>
-             <span class="radio"><input type="radio" name="radio" value="Interested Party"></span>
+            <select id="role">
+              <option value="Athlete" name="role" >Athlete</option>
+              <option value="Volunteer" name="role">Volunteer</option>
+              <option value="Interested Party" name="role">Interested Party</option>
+            </select>
            </div>
           <!--Submit -->
            <input id="mySubmit" type="submit" value="Submit">
