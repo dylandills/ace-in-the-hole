@@ -1,13 +1,13 @@
 <?php
 $msg = '';
 //Don't run this unless we're handling a form submission
-if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
+if (isset($_POST['myRName']) AND empty($_POST['honeypot'])) {
     /*Since the form has been submitted, let's capture the submission values so we can display them to the user on the success page*/
-    $role = $_POST['role'];
+    $role = implode(' | ', $_POST['role']);
     $myRName = $_POST['myRName'];
     $myAge = $_POST['myAge'];
     $myREmail = $_POST['myREmail'];
-    $gender = $_POST['gender'];
+    $gender = implode(' | ', $_POST['gender']);
     $myEName = $_POST['myEName'];
     $myENumber = $_POST['myENumber'];
     $event = implode(' | ', $_POST['checkEvent']);
@@ -38,7 +38,7 @@ if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
     //Put the submitter's address in a reply-to header
     //This will fail if the address provided is invalid,
     //in which case we should ignore the whole request
-    $mail->addReplyTo($myEmail, $myName);
+    $mail->addReplyTo($myREmail, $myRName);
     $mail->Subject = 'Ace In The Hole Register Form';
     //Keep it simple - don't use HTML
     $mail->isHTML(true);

@@ -37,10 +37,10 @@
           <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion" required></textarea><br />
           <!--Athelete, Volunteer, or Interested Party-->
           <div class="athlete-wrapper">
-            <select id="role">
-              <option value="Athlete" name="role" >Athlete</option>
-              <option value="Volunteer" name="role">Volunteer</option>
-              <option value="Interested Party" name="role">Interested Party</option>
+            <select id="role" name="role[]" >
+              <option value="Athlete" name="role[]" >Athlete</option>
+              <option value="Volunteer" name="role[]">Volunteer</option>
+              <option value="Interested Party" name="role[]">Interested Party</option>
             </select>
            </div>
           <!--Submit -->

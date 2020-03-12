@@ -61,9 +61,9 @@
           <!--Athelete or Volunteer-->
           <p>Will you be coming as an Athlete or a Volunteer?</p>
           <div class="athlete-wrapper">
-            <select id="role">
-              <option value="Athlete" name="role" >Athlete</option>
-              <option value="Volunteer" name="role">Volunteer</option>
+            <select id="role" name="role[]">
+              <option value="Athlete" name="role[]" >Athlete</option>
+              <option value="Volunteer" name="role[]">Volunteer</option>
             </select>
            </div>
           <h2>Your Info</h2>
@@ -77,10 +77,10 @@
           <div class="gender-wrapper">
             <label for="gender">What gender do you identify with?</label>
             <br />
-            <select id="gender">
-              <option value="Male" name="gender" >Male</option>
-              <option value="Female" name="gender">Female</option>
-              <option value="Nonbinary/Other" name="gender">Nonbinary/Other</option>
+            <select id="gender" name="gender[]">
+              <option value="Male" name="gender[]" >Male</option>
+              <option value="Female" name="gender[]">Female</option>
+              <option value="Nonbinary/Other" name="gender[]">Nonbinary/Other</option>
             </select>
           </div>
           <!--Emergency Contact Info-->
