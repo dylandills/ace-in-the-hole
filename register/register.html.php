@@ -75,12 +75,13 @@
           <input type="text" name="myREmail" id="myREmail" required>
           <!--Gender Checkboxes-->
           <div class="gender-wrapper">
-            <label for="Female">Female</label>
-            <span><input type="radio" name="gender" value="Female"></span>
-            <label for="Male">Male</label>
-            <span><input type="radio" name="gender" value="Male"></span>
-            <label for="Nonbinary/Other">Nonbinary/Other</label>
-            <span><input type="radio" name="gender" value="Nonbinary/Other"></span>
+            <label for="gender">What gender do you identify with?</label>
+            <br />
+            <select id="gender">
+              <option value="Male" name="gender" >Male</option>
+              <option value="Female" name="gender">Female</option>
+              <option value="Nonbinary/Other" name="gender">Nonbinary/Other</option>
+            </select>
           </div>
           <!--Emergency Contact Info-->
           <h2>Emergency Contact Info</h2>
