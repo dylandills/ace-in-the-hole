@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+    <meta name="description" content="Ace in the Hole welcomes all comments, questions, or concerns. Please contact us using the following form so we can best address your needs.">
+    <meta name="keywords" content="contact ace in the hole,ace in the hole contact,portland or athletic company contact">
     <title>Ace In The Hole Events</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
@@ -11,9 +13,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../js/scripts.js"></script>
     <script src="https://use.fontawesome.com/25af06de28.js"></script>
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
     <?php include '../includes/header.inc.html.php'; ?>

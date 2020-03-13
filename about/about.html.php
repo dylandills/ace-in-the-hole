@@ -3,12 +3,18 @@
   <head>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta charset="UTF-8">
+    <meta name="description" content="Ace in the Hole is an athletic event company based in Portland, OR.">
+    <meta name="keywords" content="about ace in the hole,portland or athletic event company,portland or running event company,portland or triathlon event company">
     <title>Ace In The Hole Events</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap" rel="stylesheet">
     <link href="../css/responsiveslides.css" rel="stylesheet" type="text/css">
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
     <link href="../css/reset.css" rel="stylesheet" type="text/css">
     <link href="../css/helper.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/responsiveslides.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="https://use.fontawesome.com/25af06de28.js"></script>
   </head>
   <body>
     <?php include '../includes/header.inc.html.php'; ?>
@@ -28,15 +34,13 @@
         <!---Slider Gallery --->
         <div class="rslides_container">
           <ul class="rslides" id="slider1">
-            <li><img src="../img/ace10.jpg" alt=""></li>
-            <li><img src="../img/ace11.jpg" alt=""></li>
-            <li><img src="../img/ace12.jpg" alt=""></li>
-            <li><img src="../img/ace13.jpg" alt=""></li>
-            <li><img src="../img/ace14.jpg" alt=""></li>
-            <li><img src="../img/ace15.jpg" alt=""></li>
-            <li><img src="../img/ace16.jpg" alt=""></li>
-            <li><img src="../img/ace17.jpg" alt=""></li>
-            <li><img src="../img/ace18.jpg" alt=""></li>
+            <li><img src="../img/ace10.jpg" alt="runner running across finish line with a crowd on both the left and right side"></li>
+            <li><img src="../img/ace11.jpg" alt="group of runners running, with only their torso and legs shown"></li>
+            <li><img src="../img/ace12.jpg" alt="group of bicyclists competing in a race"></li>
+            <li><img src="../img/ace13.jpg" alt="group of runners running in a race"></li>
+            <li><img src="../img/ace14.jpg" alt="runners competing in a track race"></li>
+            <li><img src="../img/ace16.jpg" alt="runner running with white tank top on. group of runners behind them with a crowd on both the left and right side"></li>
+            <li><img src="../img/ace18.jpg" alt="group of runners running down a street in a marathon"></li>
           </ul>
         </div>
       </section>
@@ -62,9 +66,5 @@
       </section>
     </main>
     <?php include '../includes/footer.inc.html.php'; ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../js/responsiveslides.min.js"></script>
-    <script src="../js/scripts.js"></script>
-    <script src="https://use.fontawesome.com/25af06de28.js"></script>
   </body>
 </html>
